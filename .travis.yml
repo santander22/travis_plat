@@ -20,10 +20,8 @@ deploy:
   keep-history: true
   # to connect with github
   github-token: $GITHUB_TOKEN
-  # path where all will be store, dir resoult of compilation
-  local-dir: dist/ # as public o bundle
   # this branch it recomended of Github
   target-branch: gh-pages
   commit_message: "Deploying project"
   on:
-    branch: master
+    branch: main

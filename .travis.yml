@@ -1,0 +1,29 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+# last version of node
+node_js:
+  - '12'
+# depth on branches
+git:
+  depth: 3
+# like npm run build comand
+script:
+  - yarn build
+deploy:
+# like heroku, but is github-pages
+  provider: pages
+  # to clean up
+  skip-cleanup: true
+  keep-history: true
+  # to connect with github
+  github-token: $GITHUB_TOKEN
+  # path where all will be store, dir resoult of compilation
+  local-dir: dist/ # as public o bundle
+  # this branch it recomended of Github
+  target-branch: gh-pages
+  commit_message: "Deploying project"
+  on:
+    branch: master

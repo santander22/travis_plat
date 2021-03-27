@@ -18,14 +18,14 @@ deploy:
   provider: pages
   strategy: git
   # to clean up
-  skip-cleanup: true
-  keep-history: true
+  skip_cleanup: true
+  keep_history: true
   # to connect with github
-  github-token: $GITHUB_TOKEN
+  token: $GITHUB_TOKEN
   # path where all will be store, dir resoult of compilation
-  local-dir: dist/ # as public o bundle
+  local_dir: dist/ # as public o bundle
   # this branch it recomended of Github
-  target-branch: gh-pages
+  target_branch: gh-pages
   commit_message: "Deploying project"
   on:
     branch: main

@@ -1,4 +1,7 @@
 language: node_js
+os:
+  - linux
+dist: xenial
 cache:
   directories:
     - node_modules
@@ -13,6 +16,7 @@ git:
 deploy:
 # like heroku, but is github-pages
   provider: pages
+  strategy: git
   # to clean up
   skip-cleanup: true
   keep-history: true

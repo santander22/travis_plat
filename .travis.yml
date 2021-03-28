@@ -23,7 +23,7 @@ deploy:
   # to connect with github
   token: $GITHUB_TOKEN
   # path where all will be store, dir resoult of compilation
-  local_dir: dist/ # as public o bundle
+  # local_dir: dist/ # as public o bundle
   # this branch it recomended of Github
   target_branch: gh-pages
   commit_message: "Deploying project"

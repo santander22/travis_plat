@@ -18,7 +18,6 @@ deploy:
 # like heroku, but is github-pages
   provider: script
   script: node index.js
-  strategy: JwtStrategy
   # to clean up
   cleanup: true
   keep_history: true

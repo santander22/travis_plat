@@ -16,7 +16,7 @@ git:
 
 deploy:
 # like heroku, but is github-pages
-  provider: script
+  provider: pages
   script: node index.js
   # to clean up
   cleanup: true

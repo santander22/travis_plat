@@ -13,6 +13,8 @@ node_js:
 git:
   depth: 3
 # like npm run build comand
+script:
+  - node index.js
 deploy:
 # like heroku, but is github-pages
   provider: pages

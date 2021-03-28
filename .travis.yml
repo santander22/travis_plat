@@ -18,7 +18,7 @@ deploy:
   provider: pages
   strategy: git
   # to clean up
-  skip_cleanup: true
+  cleanup: true
   keep_history: true
   # to connect with github
   token: $GITHUB_TOKEN

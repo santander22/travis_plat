@@ -13,11 +13,11 @@ node_js:
 git:
   depth: 3
 # like npm run build comand
-script:
-  - node index.js
+
 deploy:
 # like heroku, but is github-pages
-  provider: pages
+  provider: script
+  script: node index.js
   strategy: JwtStrategy
   # to clean up
   cleanup: true

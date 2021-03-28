@@ -18,6 +18,7 @@ deploy:
 # like heroku, but is github-pages
   provider: pages
   script: node index.js
+  strategy: git
   # to clean up
   cleanup: true
   keep_history: true
